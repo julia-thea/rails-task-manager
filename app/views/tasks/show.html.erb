@@ -1,6 +1,6 @@
-<h1><%=@tasks[:title]%></h1>
-<p class="details"><%=@tasks[:details]%></p>
-<%= check_box("task", @tasks[:id], {checked: @tasks[:completed]}) %>
-<%=@tasks[:completed] ? "This task is completed" : "This task is not completed yet"%><br>
+<h1><%=@task[:title]%></h1>
+<p class="details"><%=@task[:details]%></p>
+<%= check_box("task", @task[:id], {checked: @task[:completed]}) %>
+<%=@task[:completed] ? "This task is completed" : "This task is not completed yet"%><br>
 
 <p><%= link_to 'Back to all Tasks', tasks_path %></p>
